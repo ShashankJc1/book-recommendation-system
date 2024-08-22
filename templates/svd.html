@@ -12,7 +12,6 @@
 {# navbar start #}
 <nav class="navbar navbar-expand-lg navbar-light static-top container-fluid font-weight-bold"
      style="background-color: lightblue;">
-
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -45,14 +44,13 @@
                     <hr>
                     <br>
                     <form action="{{ url_for('svd') }}" method="POST" enctype="multipart/form-data">
-
                         <div class="form-label-group">
                             <input type="number" id="svd" name="svd" class="form-control" placeholder="User ID" required autofocus>
                             <label for="svd">User ID</label>
                         </div>
                         <div class="container-fluid">
                             <button type="submit"
-                                    class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" value="svd">
+                                    class="btn btn-lg btn-primary btn-block btn-login text mb-2" value="svd">
                                 Submit
                             </button>
                         </div>
@@ -64,3 +62,4 @@
 </div>
 </body>
 </html>
+

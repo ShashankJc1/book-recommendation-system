@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Result</title>
+    <title>SVD Result</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
@@ -12,19 +12,18 @@
 {# navbar start #}
 <nav class="navbar navbar-expand-lg navbar-light static-top container-fluid font-weight-bold"
      style="background-color: lightblue;">
-
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav ml-auto text-center text-justify">
-             <li class="nav-item ">
+            <li class="nav-item">
                 <a class="nav-link" href="{{ url_for('home') }}">KNN</a>
             </li>
-            <li class="nav-item ">
+            <li class="nav-item active">
                 <a class="nav-link" href="{{ url_for('svdIndex') }}">SVD</a>
             </li>
-            <li class="nav-item ">
+            <li class="nav-item">
                 <a class="nav-link" href="#">View</a>
             </li>
             <li class="nav-item">
@@ -41,7 +40,7 @@
         <div class="col-sm-12 col-md-12 col-lg-12 mx-auto">
             <div class="card card-signin  my-5">
                 <div class="card-body">
-                    <h4 class="card-title text-center">Recommended book </h4>
+                    <h4 class="card-title text-center">Recommended Books</h4>
                     <hr>
                     <br>
                     {{ predictionB }}<br><hr>
